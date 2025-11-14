@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #333; color: white; padding: 1rem; text-align: center; }
+#jobs { padding: 1rem; }
+.job { border: 1px solid #ccc; padding: 1rem; border-radius: 5px; margin-bottom: 1rem; }
