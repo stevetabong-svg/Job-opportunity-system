@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#jobs {
+    padding: 1rem;
+}
+
+.job {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Job Details Section */
+.job-details-container {
+    background: white;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+}
+
+.job-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.company-info {
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.company-info span {
+    margin: 0 0.5rem;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+    border-bottom: 2px solid #b5caec;
+    padding-bottom: 0.5rem;
+}
+
+.job-description {
+    line-height: 1.6;
+    color: #555;
+}
+
+.requirements-list {
+    list-style-position: inside;
+    color: #555;
+    line-height: 1.8;
+}
+
+.requirements-list li {
+    margin-bottom: 0.5rem;
+}
+
+.apply-btn, .back-btn {
+    background: #2557a7;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    transition: background 0.2s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.apply-btn:hover, .back-btn:hover {
+    background: #164081;
+}
+
+.back-btn {
+    background: #666;
+}
+
+.back-btn:hover {
+    background: #444;
+}
+
+footer p {
+    text-align: center;
+    padding: 1rem;
+    background: #f4f4f4;
+    color: #333;
+    margin-top: 2rem;
+}
