@@ -14,3 +14,34 @@ jobs.forEach(job => {
                    <p><strong>Location:</strong> ${job.location}</p>`;
   container.appendChild(div);
 });
+}
+
+const jobs = [
+  { tittle: "Frontend developer", company:"TechCorp",loction:"Remote",salary:"1500 USD"),
+   {tittle:"Backend Developer",company:,"Cloudworks",
+   location:"Buea",salary:"1700 USD"),
+   {tittle:"Cybersecurity Analyst",company:"secureNet",
+   location:"Remote", salary:"1800 USD"},
+  {tittle:"IT support Technician", company:"HelpDesk Ltd",
+   location:"Douala",salary:"900 USD"},
+  {tittle:"UI/UX Desiggner",company:"Pixelflow",location:"On-site",salary:"1000 USD"},
+  {tittle:"Network Engineer",company:"ConnectHub",loction:"Buea",salary:"1200 USD"}
+  ];
+
+function displayJobs() {
+  const container = document.getElementByld("job-list");
+  container.innerHTML = "";
+
+  jobs.forEach(job => {
+    const card = document.createElement("div");
+    card.className ="job-card";
+    card.innertHTMl =
+      <h3>${job.tittle}</h3>
+               <p><strong>company:</strong>${job.company},</p>
+               <p><strong>location:</strong>${job.location}</p>
+               <p><strong>salary:</strong>${job.salary}</p>
+               ;
+  container.appendChild(card);
+});
+}
+window.onload = displayjobs;
