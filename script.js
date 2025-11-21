@@ -14,3 +14,18 @@ jobs.forEach(job => {
                    <p><strong>Location:</strong> ${job.location}</p>`;
   container.appendChild(div);
 });
+// Example function to filter job listings based on keyword
+function filterJobs(keyword) {
+    const filteredJobs = jobs.filter(job => 
+        job.title.toLowerCase().includes(keyword.toLowerCase()) ||
+        job.company.toLowerCase().includes(keyword.toLowerCase()) ||
+        job.description.toLowerCase().includes(keyword.toLowerCase())
+    );
+    displayJobs(filteredJobs);
+}
+
+// Assuming there's an input field for search
+document.getElementById("searchInput").addEventListener("input", (event) => {
+    const keyword = event.target.value;
+    filterJobs(keyword);
+});
